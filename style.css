@@ -844,3 +844,93 @@ footer a {
     height: 300px;
   }
 }
+
+/* ======= FINAL MOBILE FIX — OVERRIDES EVERYTHING BROKEN ABOVE ======= */
+@media (max-width: 768px) {
+
+  /* Force all container sections to center properly */
+  #hero,
+  #services,
+  #about,
+  #before,
+  #pricing,
+  #reviews,
+  #contact {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    text-align: center !important;
+  }
+
+  /* Hero logo */
+  .resize {
+    margin: 0 auto !important;
+    max-width: 260px !important;
+    display: block !important;
+  }
+
+  /* Hero text */
+  .herotext {
+    text-align: center !important;
+  }
+
+  /* Buttons full width */
+  .callButton,
+  .instaButton {
+    width: 100% !important;
+    max-width: 320px !important;
+    margin: 10px auto !important;
+    display: block !important;
+  }
+
+  /* Services stack properly */
+  .service1,
+  .service2,
+  .service3,
+  .service4 {
+    display: block !important;
+    width: 100% !important;
+    max-width: 350px !important;
+    margin: 0 auto 20px !important;
+    text-align: center !important;
+  }
+
+  /* About section center */
+  .about-wrapper {
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+
+  .about-text p {
+    text-align: left !important;
+  }
+
+  /* Fix BEFORE/AFTER grid alignment */
+  .ba-grid {
+    padding: 0 !important;
+  }
+
+  /* Fix nav bar on mobile */
+  nav {
+    width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+
+  .nav-inner {
+    width: 100% !important;
+    padding: 10px 16px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+
+  .nav-links {
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    text-align: left !important;
+    padding-left: 0 !important;
+  }
+}
+

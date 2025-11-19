@@ -21,7 +21,7 @@ img {
   height: auto;
 }
 
-
+@media screen and (max-width: 480px) { .resize { display: none; } }
 /* PAWPRINTS SCATTERED DOWN THE PAGE */
 .paw {
   position: absolute;
@@ -986,4 +986,5 @@ html, body {
     height: 320px;
   }
 }
+
 

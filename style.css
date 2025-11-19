@@ -9,6 +9,19 @@ body {
   position: relative;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden; /* stop horizontal scroll */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
 /* PAWPRINTS SCATTERED DOWN THE PAGE */
 .paw {
   position: absolute;
@@ -877,6 +890,96 @@ html, body {
 @media (max-width: 600px) {
   iframe {
     height: 600px;   /* a bit shorter than 750px on phones */
+  }
+
+  .contact-extra .map {
+    height: 320px;
+  }
+}
+
+/* === MOBILE LAYOUT TWEAKS === */
+@media (max-width: 768px) {
+
+  /* HERO */
+  #hero {
+    padding: 90px 16px 40px;      /* less side padding on phones */
+  }
+
+  .resize {
+    width: 100%;
+    max-width: 260px;             /* logo not huge */
+    height: auto;
+    display: block;
+    margin: 0 auto 16px;
+  }
+
+  .herotext {
+    font-size: 1.35rem;
+    margin-bottom: 12px;
+  }
+
+  .callButton,
+  .instaButton {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin: 10px auto 0;
+    font-size: 16px;
+  }
+
+  /* SERVICES */
+  #services {
+    padding: 32px 16px 40px;
+  }
+
+  .service1,
+  .service2,
+  .service3,
+  .service4 {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    height: auto;                 /* let them grow with text */
+    margin: 0 auto 20px;          /* centred stack */
+    text-align: left;             /* or center if you prefer */
+  }
+
+  .service1 h3,
+  .service2 h3,
+  .service3 h3,
+  .service4 h3 {
+    font-size: 1.1rem;
+  }
+
+  .service1 p,
+  .service2 p,
+  .service3 p,
+  .service4 p {
+    font-size: 0.95rem;
+  }
+
+  /* ABOUT SECTION */
+  #about {
+    padding: 40px 16px;
+  }
+
+  .about-wrapper {
+    gap: 20px;
+  }
+
+  /* BEFORE & AFTER GRID – give it side padding */
+  .ba-grid {
+    padding: 0 16px;
+  }
+
+  /* CONTACT + MAP + IFRAME */
+  iframe {
+    height: 600px;                /* not too tall on mobile */
+  }
+
+  .contact-wrap {
+    padding: 0 16px;
+    grid-template-columns: 1fr;
   }
 
   .contact-extra .map {

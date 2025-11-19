@@ -809,3 +809,77 @@ iframe {
     grid-template-columns: 1fr;
   }
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden; /* stop sneaky sideways scroll */
+}
+
+/* === MOBILE TWEAKS (general) === */
+@media (max-width: 768px) {
+
+  /* Hero spacing + image */
+  #hero {
+    padding: 90px 16px 40px;   /* less side padding on mobile */
+  }
+
+  .resize {
+    width: 100%;
+    max-width: 320px;          /* shrink logo on small screens */
+    height: auto;
+  }
+
+  .herotext {
+    font-size: 1.3rem;         /* slightly smaller headings */
+    margin-bottom: 12px;
+  }
+
+  /* Buttons: full-width on mobile */
+  .callButton,
+  .instaButton {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin: 8px auto;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service1,
+  .service2,
+  .service3,
+  .service4 {
+    display: block;
+    width: 100%;
+    max-width: 340px;
+    height: auto;              /* let height grow with content */
+    margin: 0 auto 20px;       /* centre them and space out */
+    text-align: left;          /* or center if you prefer */
+  }
+}
+
+@media (max-width: 768px) {
+  .paw {
+    background-size: 80px;
+    width: 120px;
+    height: 120px;
+    opacity: 0.08; /* a bit lighter on mobile */
+  }
+}
+
+@media (max-width: 600px) {
+  iframe {
+    height: 600px;   /* a bit shorter than 750px on phones */
+  }
+
+  .contact-extra .map {
+    height: 320px;
+  }
+}

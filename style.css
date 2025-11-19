@@ -1,7 +1,9 @@
 /* ===========================
    GLOBAL / RESET
    =========================== */
-
+body {
+    background-color: red !important;
+}
 *,
 *::before,
 *::after {
@@ -1008,6 +1010,7 @@ nav {
       margin: 0 auto 20px !important;
   }
 }
+
 
 
 

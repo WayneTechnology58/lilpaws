@@ -934,3 +934,46 @@ footer a {
   }
 }
 
+
+/* --- GLOBAL MOBILE PADDING FIX --- */
+section,
+#hero,
+#services,
+#about,
+#before,
+#pricing,
+#reviews,
+#contact,
+footer {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+}
+
+/* make all grid containers full width */
+.ba-grid,
+.pricing-grid,
+.review-grid,
+.contact-wrap {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* make About Me image truly centred */
+.about-wrapper,
+.about-image,
+.about-image img {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+}
+
+/* fix alignment of About text */
+.about-text {
+    text-align: left !important;
+    padding: 0 10px !important;
+}

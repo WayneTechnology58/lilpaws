@@ -977,3 +977,19 @@ footer {
     text-align: left !important;
     padding: 0 10px !important;
 }
+
+/* Fix mobile nav overflow */
+.nav-links {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+.nav-inner {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+nav {
+    overflow-x: hidden !important;
+}
+
+

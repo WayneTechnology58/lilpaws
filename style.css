@@ -992,4 +992,23 @@ nav {
     overflow-x: hidden !important;
 }
 
+/* ==========================
+   FORCE SERVICE CARDS TO BE MOBILE SAFE
+   ========================== */
+@media (max-width: 768px) {
+
+  .service1,
+  .service2,
+  .service3,
+  .service4 {
+      width: 100% !important;
+      max-width: 360px !important;
+      height: auto !important;
+      display: block !important;
+      margin: 0 auto 20px !important;
+  }
+}
+
+
+
 

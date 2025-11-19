@@ -1,72 +1,28 @@
-/* ===========================
-   GLOBAL / RESET
-   =========================== */
 body {
-    background-color: red !important;
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
-  overflow-x: hidden;
-  height: 100%;
-}
-
-body {
-  background-color: #FFF6ED;
-  font-family: "Coming Soon", cursive;
+    background-color: #FFF6ED;
+    font-family: "Coming Soon", cursive;
   font-weight: 400;
   font-style: normal;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  
+
+ 
   position: relative;
 }
 
-main {
-  flex: 1;
+html, body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden; /* stop horizontal scroll */
 }
 
 img {
   max-width: 100%;
   height: auto;
-  display: block;
 }
 
-h1,
-h2,
-h3 {
-  font-weight: 700;
-}
 
-p {
-  font-weight: 400;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-a:hover {
-  color: #FF69EB;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-/* ===========================
-   PAWPRINTS
-   =========================== */
-
+/* PAWPRINTS SCATTERED DOWN THE PAGE */
 .paw {
   position: absolute;
   background-image: url("paw.png");
@@ -86,9 +42,457 @@ a:visited {
 .paw.p5 { top: 2200px; left: 60px; }
 .paw.p6 { top: 2800px; right: 100px; }
 
-/* ===========================
-   NAVBAR
-   =========================== */
+
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+
+h1, h2, h3 {
+    font-weight: 700;
+
+}
+
+p{
+    font-weight: 400;
+}
+#hero { 
+    padding: 100px;
+    text-align: center;
+}
+
+.herotext {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Chewy";
+}
+
+.callButton {
+    background-color: #fcadf9;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-family: 'Poppins', sans-serif;
+
+    
+}
+
+.callButton,
+.instaButton {
+    display: inline-block;      /* makes <a> act like button */
+    text-decoration: none;      /* removes underline */
+    text-align: center;         /* keeps text tidy */
+}
+
+.instaButton {
+    background-color: #fcadf9;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
+
+    
+}
+.resize {
+    width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+#services { 
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.service1, .service2, .service3, .service4 {
+    border: 10px solid #fcadf9;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 10px;      /* side margins so they can sit in a row */
+    width: 200px;           /* fixed width */
+    height: 200px;          /* 🔑 all boxes now same height */
+    display: inline-block; 
+    vertical-align: top;    /* line up at the top instead of wobbling */
+}
+
+.serviceTitle {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+
+button:hover {
+    background-color: #FF69EB;
+    color:white;
+}
+
+/* ===== ABOUT SECTION ===== */
+
+#about {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Title above image + text */
+.about-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+/* Wrapper for image + text */
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+/* Left side image */
+.about-image img {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  display: block;
+}
+
+/* Right side text */
+.about-text {
+  flex: 1;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .about-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 240px;
+  }
+
+  .about-text {
+    text-align: left; /* Switch to center if you prefer */
+  }
+}
+
+
+/* ===== BEFORE & AFTER SECTION ===== */
+
+#before {
+  background-color: #FFF6ED;       /* matches your site background */
+  padding: 60px 20px 70px;
+}
+
+.ba-title {
+  text-align: center;
+  font-size: 32px;
+  margin: 0 0 10px;
+  font-weight: 700;
+}
+
+.ba-subtitle {
+  text-align: center;
+  margin: 0 0 40px;
+  font-size: 18px;
+}
+
+/* Card grid */
+.ba-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Individual card */
+.ba-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Image row */
+.ba-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Each image block */
+.ba-image {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+}
+
+.ba-image img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4; /* TALLER images */
+  object-fit: cover;    /* still neat but less cropped vertically */
+}
+
+
+/* Before / After badges */
+.ba-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.ba-badge-before {
+  background-color: #000000;
+}
+
+.ba-badge-after {
+  background-color: #ff4fd6; /* bright pink */
+}
+
+/* Text strip at bottom of card */
+.ba-info {
+  padding: 18px 22px 20px;
+  text-align: center;
+}
+
+.ba-info h3 {
+  margin: 0 0 4px;
+  font-size: 20px;
+}
+
+.ba-info p {
+  margin: 0;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+/* Small screen tweaks */
+@media (max-width: 600px) {
+  .ba-subtitle {
+    margin-bottom: 30px;
+  }
+
+  .ba-badge {
+    top: 10px;
+    left: 10px;
+  }
+}
+
+
+
+
+/* ===== PRICING SECTION ===== */
+
+#pricing {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.pricing-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: 1000;
+}
+
+.pricing-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* ← EXACTLY 2 columns */
+  gap: 30px;
+}
+
+@media (max-width: 700px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.price-card {
+  border: 10px solid #fcadf9;
+  border-radius: 15px;
+  padding: 25px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.price-card h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.price-card .desc {
+  font-style: italic;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.price-card ul {
+  list-style: none;
+  margin: 0 0 15px;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.price-card h4 {
+  margin-top: 12px;
+  font-size: 18px;
+  text-align: center;
+  color: #ff4fd6;
+  font-weight: 700;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .price-card {
+    padding: 20px;
+  }
+}
+
+
+#booking { 
+        text-align: center; 
+        padding: 40px;  
+}
+
+/* ===== REVIEWS SECTION ===== */
+
+#reviews {
+  background-color: #FBEEDF;   /* soft beige like your screenshot */
+  padding: 60px 20px 70px;
+}
+
+.reviews-title {
+  text-align: center;
+  font-size: 32px;
+  margin: 0 0 10px;
+  font-weight: 700;
+}
+
+.reviews-subtitle {
+  text-align: center;
+  margin: 0 0 40px;
+  font-size: 18px;
+}
+
+/* Review Card Grid */
+.review-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+/* Individual Review Card */
+.review-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 3px solid #f1e7df;
+}
+
+/* Pink Stars */
+.stars {
+  color: #ff4fd6;            /* your bright pink */
+  font-size: 24px;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+/* Review Quote */
+.review-text {
+  font-style: italic;
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Reviewer Name */
+.review-name {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+/* Dog Info */
+.review-dog {
+  margin: 4px 0 0;
+  opacity: 0.75;
+  font-size: 16px;
+}
+
+/* Mobile Tweaks */
+@media (max-width: 600px) {
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+#contact { 
+    background-color: #ffffff;
+    padding: 40px;
+    
+}
+
+#foot {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    height: 500px;
+}
+
+/* ===== NAVBAR ===== */
 
 nav {
   background-color: black;
@@ -108,6 +512,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 /* Logo text */
@@ -133,22 +538,27 @@ nav a:hover {
   color: #FF69EB;
 }
 
-/* Nav links container (mobile-first: hidden dropdown) */
+/* The nav links list */
 .nav-links {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+/* MOBILE FIRST: start with links hidden in a dropdown */
+.nav-links {
   position: absolute;
-  top: 100%; /* sits just under the black bar */
+  top: 100%;               /* sits just under the black bar */
   right: 0;
   left: 0;
   background-color: black;
-  display: none; /* hidden by default */
-  flex-direction: column; /* vertical stack */
+  display: none;           /* hidden by default */
+  flex-direction: column;  /* vertical stack */
+  gap: 0;
 }
 
 .nav-links li {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255,255,255,0.1);
 }
 
 .nav-links li a {
@@ -156,7 +566,7 @@ nav a:hover {
   padding: 10px 16px;
 }
 
-/* When JS adds .nav-open, show the menu */
+/* When we add the "nav-open" class in JS, show the menu */
 .nav-links.nav-open {
   display: flex;
 }
@@ -194,20 +604,23 @@ nav a:hover {
   transform: translateY(-6px) rotate(-45deg);
 }
 
-/* Desktop nav layout */
+/* ===== DESKTOP LAYOUT ===== */
 @media (min-width: 768px) {
+
+  /* Hide hamburger on bigger screens */
   .nav-toggle {
     display: none;
   }
 
+  /* Put links inline on the right */
   .nav-links {
     position: static;
-    display: flex !important;
+    display: flex !important;  /* always visible on desktop */
     flex-direction: row;
     gap: 20px;
     background: none;
-    justify-content: flex-end;
-    margin-left: auto;
+    justify-content: flex-end;   /* <-- THIS keeps your nav on the right */
+    margin-left: auto;           /* <-- EXTRA guarantee it sticks to the right */
   }
 
   .nav-links li {
@@ -219,399 +632,31 @@ nav a:hover {
   }
 }
 
-/* ===========================
-   HERO SECTION
-   =========================== */
 
-#hero {
-  padding: 120px 40px 60px; /* room for fixed nav */
-  text-align: center;
+
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
-.resize {
-  width: 600px;
-  margin: 0 auto;
+a:hover{
+    color:#FF69EB;
 }
 
-.herotext {
-  text-align: center;
-  margin-bottom: 20px;
-  font-family: "Chewy";
+a:visited{
+    text-decoration: none;
+    
 }
 
-.callButton,
-.instaButton {
-  background-color: #fcadf9;
-  color: black;
-  border: none;
-  padding: 15px 30px;
-  border-radius: 10px;
-  font-size: 18px;
-  cursor: pointer;
-  font-family: 'Poppins', sans-serif;
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  margin: 10px 8px 0;
-}
 
-/* ===========================
-   SERVICES
-   =========================== */
-
-#services {
-  background-color: #ffffff;
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.serviceTitle {
-  font-size: 32px;
-  margin-bottom: 10px;
-  font-weight: 700;
-}
-
-.service1,
-.service2,
-.service3,
-.service4 {
-  border: 10px solid #fcadf9;
-  border-radius: 15px;
-  padding: 20px;
-  margin: 20px 10px;
-  width: 200px;
-  height: 200px;
-  display: inline-block;
-  vertical-align: top;
-}
-
-#services button {
-  background-color: black;
-  color: white;
-  border: none;
-  padding: 15px 30px;
-  border-radius: 10px;
-  font-size: 18px;
-  cursor: pointer;
-  margin-top: 10px;
-  font-family: 'Poppins', sans-serif;
-}
-
-/* ===========================
-   ABOUT
-   =========================== */
-
-#about {
-  padding: 60px 20px;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.about-title {
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 30px;
-  font-weight: 700;
-}
-
-.about-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2.5rem;
-}
-
-.about-image img {
-  width: 300px;
-  max-width: 100%;
-  height: auto;
-  border-radius: 16px;
-  display: block;
-}
-
-.about-text {
-  flex: 1;
-  line-height: 1.6;
-  font-size: 18px;
-}
-
-.about-text p {
-  margin-bottom: 15px;
-}
-
-/* ===========================
-   BEFORE & AFTER
-   =========================== */
-
-#before {
-  background-color: #FFF6ED;
-  padding: 60px 20px 70px;
-}
-
-.ba-title {
-  text-align: center;
-  font-size: 32px;
-  margin: 0 0 10px;
-  font-weight: 700;
-}
-
-.ba-subtitle {
-  text-align: center;
-  margin: 0 0 40px;
-  font-size: 18px;
-}
-
-/* Card grid */
-.ba-grid {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-}
-
-/* Individual card */
-.ba-card {
-  background-color: #ffffff;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  display: flex;
-  flex-direction: column;
-}
-
-/* Image row */
-.ba-images {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-/* Each image block */
-.ba-image {
-  position: relative;
-  margin: 0;
-  overflow: hidden;
-}
-
-.ba-image img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
-}
-
-/* Before / After badges */
-.ba-badge {
-  position: absolute;
-  top: 14px;
-  left: 14px;
-  padding: 6px 14px;
-  border-radius: 999px;
-  font-size: 14px;
-  font-weight: 700;
-  color: #ffffff;
-}
-
-.ba-badge-before {
-  background-color: #000000;
-}
-
-.ba-badge-after {
-  background-color: #ff4fd6;
-}
-
-/* Text strip at bottom of card */
-.ba-info {
-  padding: 18px 22px 20px;
-  text-align: center;
-}
-
-.ba-info h3 {
-  margin: 0 0 4px;
-  font-size: 20px;
-}
-
-.ba-info p {
-  margin: 0;
-  font-size: 16px;
-  opacity: 0.8;
-}
-
-/* ===========================
-   PRICING
-   =========================== */
-
-#pricing {
-  background-color: #ffffff;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.pricing-title {
-  font-size: 32px;
-  margin-bottom: 40px;
-  font-weight: 1000;
-}
-
-.pricing-grid {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-}
-
-.price-card {
-  border: 10px solid #fcadf9;
-  border-radius: 15px;
-  padding: 25px;
-  background: #ffffff;
-  text-align: center;
-}
-
-.price-card h3 {
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.price-card .desc {
-  font-style: italic;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-.price-card ul {
-  list-style: none;
-  margin: 0 0 15px;
-  padding: 0;
-  line-height: 1.6;
-}
-
-.price-card h4 {
-  margin-top: 12px;
-  font-size: 18px;
-  text-align: center;
-  color: #ff4fd6;
-  font-weight: 700;
-}
-
-#pricing button {
-  background-color: black;
-  color: white;
-  border: none;
-  padding: 15px 30px;
-  border-radius: 10px;
-  font-size: 18px;
-  cursor: pointer;
-  margin-top: 10px;
-  font-family: 'Poppins', sans-serif;
-}
-
-/* ===========================
-   BOOKING
-   =========================== */
-
-#booking {
-  text-align: center;
-  padding: 40px;
-}
-
-iframe {
-  border-radius: 15px;
-  border: none;
-  width: 100%;
-  max-width: 600px;
-  display: block;
-  margin: 0 auto;
-  background-color: #FFF6ED;
-}
-
-/* ===========================
-   REVIEWS
-   =========================== */
-
-#reviews {
-  background-color: #FBEEDF;
-  padding: 60px 20px 70px;
-}
-
-.reviews-title {
-  text-align: center;
-  font-size: 32px;
-  margin: 0 0 10px;
-  font-weight: 700;
-}
-
-.reviews-subtitle {
-  text-align: center;
-  margin: 0 0 40px;
-  font-size: 18px;
-}
-
-/* Review Card Grid */
-.review-grid {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 30px;
-}
-
-/* Individual Review Card */
-.review-card {
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 30px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  border: 3px solid #f1e7df;
-}
-
-/* Pink Stars */
-.stars {
-  color: #ff4fd6;
-  font-size: 24px;
-  margin-bottom: 12px;
-  letter-spacing: 1px;
-}
-
-/* Review Quote */
-.review-text {
-  font-style: italic;
-  font-size: 17px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-/* Reviewer Name */
-.review-name {
-  margin: 0;
-  font-size: 19px;
-  font-weight: 700;
-}
-
-/* Dog Info */
-.review-dog {
-  margin: 4px 0 0;
-  opacity: 0.75;
-  font-size: 16px;
-}
-
-/* ===========================
-   CONTACT
-   =========================== */
-
+/* ——— Contact section ——— */
 #contact {
-  background-color: #ffffff;
+  background-color: #ffffff;        /* keeps your existing white block look */
   padding: 48px 20px;
-  position: relative;
-  overflow: hidden;
 }
 
-.contact-wrap {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* left = info, right = map */
-  gap: 40px;
-  align-items: start;
+#contact .contact-wrap {
   max-width: 980px;
   margin: 0 auto;
 }
@@ -623,98 +668,98 @@ iframe {
   text-align: center;
 }
 
-#contact p {
+#contact .contact-lead {
+  margin: 0 0 32px;
   text-align: center;
+  color: #4a5561;                   /* muted grey like the screenshot */
+  font-weight: 600;
 }
 
-.contact-list {
+#contact .contact-list {
   list-style: none;
-  margin: 16px 0 0;
+  margin: 0;
   padding: 0;
   display: grid;
-  gap: 26px;
+  gap: 26px;                         /* space between rows */
 }
 
 /* Each row */
-.contact-item {
+#contact .contact-item {
   display: grid;
-  grid-template-columns: 74px 1fr;
+  grid-template-columns: 74px 1fr;   /* pink icon + content */
   gap: 18px;
   align-items: start;
 }
 
-.contact-icon {
+#contact .contact-icon {
   width: 74px;
   height: 74px;
   border-radius: 999px;
-  background: #ff4fd6;
+  background: #ff4fd6;              /* bright pink badge from the mock */
   display: grid;
   place-items: center;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.06);
 }
 
-.contact-body h3 {
+#contact .contact-body h3 {
   margin: 4px 0 6px;
   font-size: 20px;
   line-height: 1.25;
 }
 
-.contact-body p,
-.contact-body address {
+#contact .contact-body p,
+#contact .contact-body address {
   margin: 0;
   color: #4a5561;
   font-weight: 600;
   font-style: normal;
-  text-align: left;
 }
 
-.contact-body a {
+#contact .contact-body a {
   color: inherit;
   text-decoration: none;
 }
-
-.contact-body a:hover {
+#contact .contact-body a:hover {
   text-decoration: underline;
 }
 
-/* Map */
-.contact-extra .map {
-  width: 100%;
-  height: 420px;
-  border: 0;
-  border-radius: 16px;
+/* optional faint paw watermark (easy to remove) */
+#contact {
+  position: relative;
+  overflow: hidden;
 }
 
-/* ===========================
-   FOOTER
-   =========================== */
-
-#foot {
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  width: 100%;
-  height: 500px;
+/* Responsive niceties */
+@media (min-width: 900px) {
+  #contact .contact-list { gap: 34px; }
 }
+
 
 footer {
-  background-color: black;
-  color: white;
-  text-align: center;
-  width: 100%;
-  font-family: "Coming Soon", cursive;
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+    width: 100%;
+   font-family: "Coming Soon", cursive;
   font-weight: 400;
   font-style: normal;
 }
 
 footer a {
-  color: #00ffff;
+    color:#00ffff;
 }
 
-/* ===========================
-   HOVERS
-   =========================== */
+iframe {
+    border-radius: 15px;
+    border: none;
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+    background-color: #FFF6ED;
+    width: 100%;
+}
 
 .price-card:hover,
 .ba-card:hover,
@@ -722,42 +767,149 @@ footer a {
 .service2:hover,
 .service3:hover,
 .service4:hover,
-.review-card:hover {
+.review-card:hover
+{
   transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
   transition: 0.2s ease;
 }
 
-/* ===========================
-   RESPONSIVE / MOBILE
-   =========================== */
+#pricing button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    
+}
 
-/* Medium tweaks */
-@media (max-width: 900px) {
-  .contact-list {
-    gap: 34px;
+#services button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+/* Contact layout with right-side content */
+.contact-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* left = info, right = map */
+  gap: 40px;
+  align-items: start;
+}
+
+/* Map styling */
+.contact-extra .map {
+  width: 100%;
+  height: 420px;
+  border: 0;
+  border-radius: 16px;
+}
+
+@media (max-width: 800px) {
+  .contact-wrap {
+    grid-template-columns: 1fr;
   }
 }
 
-/* Main mobile layout */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden; /* stop sneaky sideways scroll */
+}
+
+/* === MOBILE TWEAKS (general) === */
 @media (max-width: 768px) {
 
-  /* Pawprints smaller */
-  .paw {
-    background-size: 80px;
-    width: 120px;
-    height: 120px;
-    opacity: 0.08;
-  }
-
-  /* HERO */
+  /* Hero spacing + image */
   #hero {
-    padding: 80px 16px 40px;
+    padding: 90px 16px 40px;   /* less side padding on mobile */
   }
 
   .resize {
     width: 100%;
-    max-width: 260px;
+    max-width: 320px;          /* shrink logo on small screens */
+    height: auto;
+  }
+
+  .herotext {
+    font-size: 1.3rem;         /* slightly smaller headings */
+    margin-bottom: 12px;
+  }
+
+  /* Buttons: full-width on mobile */
+  .callButton,
+  .instaButton {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin: 8px auto;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service1,
+  .service2,
+  .service3,
+  .service4 {
+    display: block;
+    width: 100%;
+    max-width: 340px;
+    height: auto;              /* let height grow with content */
+    margin: 0 auto 20px;       /* centre them and space out */
+    text-align: left;          /* or center if you prefer */
+  }
+}
+
+@media (max-width: 768px) {
+  .paw {
+    background-size: 80px;
+    width: 120px;
+    height: 120px;
+    opacity: 0.08; /* a bit lighter on mobile */
+  }
+}
+
+@media (max-width: 600px) {
+  iframe {
+    height: 600px;   /* a bit shorter than 750px on phones */
+  }
+
+  .contact-extra .map {
+    height: 320px;
+  }
+}
+
+/* === MOBILE LAYOUT TWEAKS === */
+@media (max-width: 768px) {
+
+  /* HERO */
+  #hero {
+    padding: 90px 16px 40px;      /* less side padding on phones */
+  }
+
+  .resize {
+    width: 100%;
+    max-width: 260px;             /* logo not huge */
+    height: auto;
+    display: block;
     margin: 0 auto 16px;
   }
 
@@ -771,13 +923,13 @@ footer a {
     display: block;
     width: 100%;
     max-width: 320px;
-    margin: 8px auto 0;
+    margin: 10px auto 0;
     font-size: 16px;
   }
 
   /* SERVICES */
   #services {
-    padding: 40px 16px;
+    padding: 32px 16px 40px;
   }
 
   .service1,
@@ -787,231 +939,51 @@ footer a {
     display: block;
     width: 100%;
     max-width: 360px;
-    height: auto;
-    margin: 0 auto 20px;
-    text-align: left;
+    height: auto;                 /* let them grow with text */
+    margin: 0 auto 20px;          /* centred stack */
+    text-align: left;             /* or center if you prefer */
   }
 
-  /* ABOUT */
+  .service1 h3,
+  .service2 h3,
+  .service3 h3,
+  .service4 h3 {
+    font-size: 1.1rem;
+  }
+
+  .service1 p,
+  .service2 p,
+  .service3 p,
+  .service4 p {
+    font-size: 0.95rem;
+  }
+
+  /* ABOUT SECTION */
   #about {
     padding: 40px 16px;
   }
 
   .about-wrapper {
-    flex-direction: column;
-    text-align: center;
     gap: 20px;
   }
 
-  .about-text {
-    text-align: left;
-  }
-
-  .about-image img {
-    width: 240px;
-  }
-
-  /* BEFORE & AFTER */
+  /* BEFORE & AFTER GRID – give it side padding */
   .ba-grid {
-    padding: 0 8px;
+    padding: 0 16px;
   }
 
-  /* PRICING */
-  .pricing-grid {
-    grid-template-columns: 1fr;
-  }
-
-  /* REVIEWS */
-  .review-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  /* CONTACT */
-  .contact-wrap {
-    grid-template-columns: 1fr;
-    gap: 24px;
-    padding: 0 8px;
-  }
-
-  #contact p {
-    text-align: left;
-  }
-
+  /* CONTACT + MAP + IFRAME */
   iframe {
-    height: 600px;
+    height: 600px;                /* not too tall on mobile */
+  }
+
+  .contact-wrap {
+    padding: 0 16px;
+    grid-template-columns: 1fr;
   }
 
   .contact-extra .map {
-    height: 300px;
+    height: 320px;
   }
 }
-
-/* ======= FINAL MOBILE FIX — OVERRIDES EVERYTHING BROKEN ABOVE ======= */
-@media (max-width: 768px) {
-
-  /* Force all container sections to center properly */
-  #hero,
-  #services,
-  #about,
-  #before,
-  #pricing,
-  #reviews,
-  #contact {
-    padding-left: 16px !important;
-    padding-right: 16px !important;
-    text-align: center !important;
-  }
-
-  /* Hero logo */
-  .resize {
-    margin: 0 auto !important;
-    max-width: 260px !important;
-    display: block !important;
-  }
-
-  /* Hero text */
-  .herotext {
-    text-align: center !important;
-  }
-
-  /* Buttons full width */
-  .callButton,
-  .instaButton {
-    width: 100% !important;
-    max-width: 320px !important;
-    margin: 10px auto !important;
-    display: block !important;
-  }
-
-  /* Services stack properly */
-  .service1,
-  .service2,
-  .service3,
-  .service4 {
-    display: block !important;
-    width: 100% !important;
-    max-width: 350px !important;
-    margin: 0 auto 20px !important;
-    text-align: center !important;
-  }
-
-  /* About section center */
-  .about-wrapper {
-    flex-direction: column !important;
-    text-align: center !important;
-  }
-
-  .about-text p {
-    text-align: left !important;
-  }
-
-  /* Fix BEFORE/AFTER grid alignment */
-  .ba-grid {
-    padding: 0 !important;
-  }
-
-  /* Fix nav bar on mobile */
-  nav {
-    width: 100% !important;
-    left: 0 !important;
-    right: 0 !important;
-  }
-
-  .nav-inner {
-    width: 100% !important;
-    padding: 10px 16px !important;
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-  }
-
-  .nav-links {
-    position: absolute !important;
-    left: 0 !important;
-    right: 0 !important;
-    width: 100% !important;
-    text-align: left !important;
-    padding-left: 0 !important;
-  }
-}
-
-
-/* --- GLOBAL MOBILE PADDING FIX --- */
-section,
-#hero,
-#services,
-#about,
-#before,
-#pricing,
-#reviews,
-#contact,
-footer {
-    padding-left: 16px !important;
-    padding-right: 16px !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    width: 100% !important;
-}
-
-/* make all grid containers full width */
-.ba-grid,
-.pricing-grid,
-.review-grid,
-.contact-wrap {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-
-/* make About Me image truly centred */
-.about-wrapper,
-.about-image,
-.about-image img {
-    margin-left: auto !important;
-    margin-right: auto !important;
-    text-align: center !important;
-}
-
-/* fix alignment of About text */
-.about-text {
-    text-align: left !important;
-    padding: 0 10px !important;
-}
-
-/* Fix mobile nav overflow */
-.nav-links {
-    max-width: 100% !important;
-    overflow-x: hidden !important;
-}
-.nav-inner {
-    max-width: 100% !important;
-    overflow-x: hidden !important;
-}
-
-nav {
-    overflow-x: hidden !important;
-}
-
-/* ==========================
-   FORCE SERVICE CARDS TO BE MOBILE SAFE
-   ========================== */
-@media (max-width: 768px) {
-
-  .service1,
-  .service2,
-  .service3,
-  .service4 {
-      width: 100% !important;
-      max-width: 360px !important;
-      height: auto !important;
-      display: block !important;
-      margin: 0 auto 20px !important;
-  }
-}
-
-
-
-
 

@@ -101,7 +101,7 @@ margin-top: 20px  ;
     display: inline-block;      /* makes <a> act like button */
     text-decoration: none;      /* removes underline */
     text-align: center;         /* keeps text tidy */
-    ;
+    
 }
 
 .instaButton {
@@ -826,3 +826,15 @@ iframe {
 }
 
 
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;              /* space between buttons */
+  margin-top: 20px;
+  flex-wrap: wrap;        /* allows nice wrapping on tiny screens */
+}
+
+.hero-buttons a {
+  margin: 0;              /* kill the left/right margins */
+}
